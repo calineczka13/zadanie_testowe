@@ -1,0 +1,245 @@
+nav > ul { padding: 0;}
+nav > ul > li { list-style-type: none; text-align: left; font-size: 10px; padding: 2px 15px;}
+nav > ul > li:hover { background-color: #c9c9c9;}
+
+nav > ul > li > a { text-decoration: none; color: white;}
+nav > ul > li > a:hover {text-decoration: underline;}
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col1 {
+  display: block;
+  float:left;
+  margin: -10px 0 1% 0.8%;
+  background-color: black;
+  color: white;
+  line-height: 35px;
+}
+.col1 > ul { margin: 0; padding: 0; }
+.col1 > ul > li {
+  display: inline;
+  width: 15%;
+  float: left;
+}
+/*---------------------------Currency dropdown ------------------------*/
+.col1 > ul > li.wrapper-dropdown {
+  position: relative;
+  margin: 7px auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.col1 > ul > li.wrapper-dropdown span {
+  margin-left: -60px;
+}
+
+.col1 > ul > li.wrapper-dropdown:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #4cbeff transparent;
+}
+
+.col1 > ul > li.wrapper-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  transition: all 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.col1 > ul > li.wrapper-dropdown .dropdown li {
+  padding: 0 10px ;
+}
+
+.col1 > ul > li.wrapper-dropdown .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #e6e8ea;
+}
+
+.col1 > ul > li.wrapper-dropdown .dropdown li:last-of-type a { border: none; }
+.col1 > ul > li.wrapper-dropdown .dropdown li i { 
+  margin-right: 5px;
+  color: inherit;
+  vertical-align: middle; }
+
+.col1 > ul > li.wrapper-dropdown .dropdown li:hover a { color: #57a9d9; }
+.col1 > ul > li.wrapper-dropdown.active {
+  border-radius: 5px 5px 0 0;
+  background: #4cbeff;
+  box-shadow: none;
+  border-bottom: none;
+  color: white;
+}
+
+.col1 > ul > li.wrapper-dropdown.active:after { border-color: #82d1ff transparent; }
+.col1 > ul > li.wrapper-dropdown { border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px; }
+
+.no-opacity .wrapper-dropdown .dropdown,
+.no-pointerevents .wrapper-dropdown .dropdown {
+  display: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.no-opacity       .wrapper-dropdown.active .dropdown
+.no-pointerevents .wrapper-dropdown.active .dropdown {
+    display: block;
+}
+
+
+/*--------------------------------End--------------------------*/
+
+.col1 > ul > li:first-child {
+  display: inline;
+  width: 55%;
+  float: left;
+}
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 0.8%;
+  background-color: gray;
+}
+
+.col3 {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 0.8%;
+}
+
+.col2 {
+  display: block;
+  float:left;
+  margin: 0 0 0 0.8%;
+  font-size: 10px;
+  border: 1px solid black;
+}
+
+.col2 h2 {
+  background-color: blue;
+  color: white;
+  margin: 0;
+  height: 20px;
+  padding: 7px;
+}
+
+.col2 > dl {
+  display: inline;
+  float: left;
+  width: 33%;
+}
+
+.col2 > dl > dt { height: 20px; font-weight: bold;}
+
+
+.col2 > dl > dd {
+  border-top: 1px solid black;
+  margin: 0; 
+  height: 20px;
+  line-height: 20px; 
+}
+.col2 > dl > dd > input {
+  -ms-transform: scale(0.6); /* IE */
+  -moz-transform: scale(0.6); /* FF */
+  -webkit-transform: scale(0.6); /* Safari and Chrome */
+  -o-transform: scale(0.6); /* Opera */
+}
+
+.col2 > dl > dd > span {
+  padding: 0px 0px 0px 0px;
+}
+.col3 h3 { margin-top: 0;}
+.col3 > dl { display: inline; float: left; width: 10%; margin:0px 20px 0px 0px; font-size: 13px;}
+.col3 > dl > dd:last-child {  padding: 5px; margin:0; border-bottom: 1px solid black; border-left:1px solid black; border-right: 1px solid black; }
+.col3 > dl > dd:first-child { padding: 5px; margin:0; border: 1px solid black; background-color: #c9c9c9; }
+.col3 > dl > dd > input { font-size: 7px; background-color: #226be2; color: white; border: 1px solid #1525d3; border-radius: 2px;}
+
+/*.col:first-child { margin-left: 0;}*/
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+          
+.span_3_of_2 {
+  width: 10.2%;
+}
+.span_2_of_2 {
+  width: 99.2%;
+}
+.span_1_of_2 {
+  width: 80.2%;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+
+  .col1 {
+    margin: 0% 0 1% 0%;
+  }
+
+  .col2 { 
+    margin: 1% 0 1% 0%;
+  }
+
+  .col3 > dl { width: 20%;}
+}
+
+@media only screen and (max-width: 480px) {
+  .span_3_of_2 {
+    width: 100%; 
+  }
+  .span_2_of_2 {
+    width: 100%; 
+  }
+  .span_1_of_2 {
+    width: 100%;
+  }
+
+  .col3 > dl { width: 20%; font-size: 10px;}
+}
